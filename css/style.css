@@ -1,3 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+:root{
+    --muted-gray: #a7a7a7;
+    --container-background: #f9f9f9;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Open Sans", sans-serif;
+    --link-font: "Sansita", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.container {
+    padding: 0 1.5rem; 
+    max-width: 1200px; 
+    margin: 0 auto;   
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--container-background);
+    color: #333;
+    line-height: 1.6;
+}
+
+.header{
+margin-top: 2rem;
+display: grid;
+width: 100%;
+height: auto;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, auto);
+}
+.header-container {
+  display: flex;       
+  align-items: center;    
+  gap: 2rem;              
+  padding: 1rem;       
+}
+
+.language-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-family: var(--body-font);
+  text-align: center;
+}
+
+.language-table th,
+.language-table td {
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.language-table th {
+  font-family: var(--body-font);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+.language-table td:first-child {
+  text-align: left; 
+  font-weight: 500;
+}
+
+.language-table th:first-child {
+  text-align: left;
+}
+
+.header-image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;  
+}
+
+.profile-picture{
+width: 150px;
+height: 150px;
+object-fit: cover;
+}
+
+.profile{
+text-align: left;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  font-family: var(--heading-font);
+}
+h2{
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+    margin-bottom: 0.5em;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.Skill {
+    margin-bottom: 0.75em; 
+    line-height: 1.5;
+}
+
+.school-description {
+    margin-bottom: 0.75em; 
+    line-height: 1.5;
+}
+
+.workplace-description {
+    margin-bottom: 0.75em; 
+    line-height: 1.5;
+}
+
+.summary-text-last {
+    margin-bottom: 0.75em; 
+    line-height: 1.5;    
+}
+
+footer {
+  background-color: var(--container-background); 
+  padding: 1rem 0;
+  text-align: center; 
+  font-family: var(--body-font);
+
+}
+
+footer .footer,
+footer .copyright {
+  margin: 0.2rem 0;
+}
+
 @media (max-width: 480px){
     .container{
         width: 100%;
