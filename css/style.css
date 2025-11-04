@@ -140,6 +140,11 @@ footer .copyright {
   margin: 0.2rem 0;
 }
 
+.header-image-container img {
+
+  transition: opacity 0.3s ease-in-out; 
+}
+
 @media (max-width: 480px){
     .container{
         width: 100%;
